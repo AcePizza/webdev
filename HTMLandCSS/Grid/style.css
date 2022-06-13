@@ -1,0 +1,45 @@
+/* Grid areas */
+.item1 { grid-area: nav; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+.item4 { grid-area: side; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'side nav nav nav nav nav'
+    'side main main main main main'
+    'side footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-style: solid;
+}
+
+.grid-container>* {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-style: solid;
+}
+
+.flex-menu {
+  /* border-style: dashed; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-child {
+  background-color: azure;
+  /* border-style: dotted; */
+  border-radius: 5px;
+}

@@ -1,0 +1,80 @@
+/* For the whole page */
+* {
+  margin: 0;
+  padding: 20px;
+}
+
+/* Style the navigation bar */
+.navbar {
+    vertical-align: top;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    padding: 1px;
+}
+  
+/* Navbar links */
+.navbar a {
+  border-radius: 7px;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Rounded border */
+hr.rounded {
+  width: 90%;
+  text-align: center;
+  border-top: 3px solid #555;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+/* */
+div.home {
+  padding: 20px
+}
+
+/* */
+h1 {
+  padding: 20px;
+}
+
+/* */
+img {
+  float: left;
+  margin: 0 0 0 15 px;
+  border-radius: 5px;
+  padding-right: 5px;
+}
+
+/* */
+section {
+   padding: 20px
+ }
+
+ /* */
+form {
+  padding: 20px;
+}
+
+/* */
+div.pets {
+  padding: 20px;
+}
+
+/* */
+div.email {
+  
+}
+
+
+

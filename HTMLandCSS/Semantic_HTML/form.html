@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="index.html"><span class="material-symbols-outlined">
+                    home
+                    </span></a>
+                <a href="table.html">Table</a>
+                <a class="navbar-page" href="form.html">Form</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>       
+    </header>
+    <main>
+        <article>
+            <section>
+                <div class="main-stuff">
+                    <h1>Regular Form</h1>
+                    <br>
+                    <form>
+                        <!--Fist name-->
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+
+                        <!--Last name-->
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                        <br>
+
+                        <!--Check box-->
+                        <p>Animal</p>
+                        <label for="dog">Dog</label>
+                        <input type="checkbox" id="dog" value="dog">
+                        <label for="cat">Cat</label>
+                        <input type="checkbox" id="cat" value="cat">
+                        <label for="snake">Snake</label>
+                        <input type="checkbox" id="snake" value="snake">
+                        <br>
+
+                        <!--Radio button-->
+                        <p>Gender</p>
+                        <input type="radio" id="man" name="gender">
+                        <label for="man">Man</label>
+                        <input type="radio" id="woman" name="gender">
+                        <label for="woman">Woman</label>
+                        <br>
+
+                        <!--Drop-down list-->
+                        <label for="contry">What contry are you from?</label>
+                        <select name="contry" id="contry">
+                            <option value="norway">Norway</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="Finland">Finland</option>
+                        </select>
+                        <br>
+
+                        <!--Form submit button-->
+                        <input type="submit" value="Send">
+                    </form>
+                    <hr class="divider">
+                    <h1>Flex Form</h1>
+                    <br>
+                    <form>
+                        <div class="flex-form">
+                            <div>
+                                <!--Fist name-->
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+
+                            <div>
+                                <!--Last name-->
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                            
+                            <div>
+                                <!--Check box-->
+                                <p>Animal</p>
+                                <label for="dog">Dog</label>
+                                <input type="checkbox" id="dog" value="dog">
+                                <label for="cat">Cat</label>
+                                <input type="checkbox" id="cat" value="cat">
+                                <label for="snake">Snake</label>
+                                <input type="checkbox" id="snake" value="snake">
+                            </div>
+
+                            <div>
+                                <!--Radio button-->
+                                <p>Gender</p>
+                                <input type="radio" id="man" name="gender">
+                                <label for="man">Man</label>
+                                <input type="radio" id="woman" name="gender">
+                                <label for="woman">Woman</label>
+                            </div>
+                            
+                            <div>
+                                <!--Drop-down list-->
+                                <label for="contry">What contry are you from?</label>
+                                <select name="contry" id="contry">
+                                    <option value="norway">Norway</option>
+                                    <option value="sweden">Sweden</option>
+                                    <option value="denmark">Denmark</option>
+                                    <option value="Finland">Finland</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <!--Form submit button-->
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                    <hr class="divider">
+
+                    <!--Grid form-->
+                    <h1>Grid Form</h1>
+                    <br>
+                    <form>
+                        <div class="grid-form">
+                            <div class="grid-item">
+                                <!--Fist name-->
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+
+                            <div class="grid-item">
+                                <!--Last name-->
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                            
+                            <div class="grid-item">
+                                <!--Check box-->
+                                <p>Animal</p>
+                                <label for="dog">Dog</label>
+                                <input type="checkbox" id="dog" value="dog">
+                                <label for="cat">Cat</label>
+                                <input type="checkbox" id="cat" value="cat">
+                                <label for="snake">Snake</label>
+                                <input type="checkbox" id="snake" value="snake">
+                            </div>
+
+                            <div class="grid-item">
+                                <!--Radio button-->
+                                <p>Gender</p>
+                                <input type="radio" id="man" name="gender">
+                                <label for="man">Man</label>
+                                <input type="radio" id="woman" name="gender">
+                                <label for="woman">Woman</label>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <!--Drop-down list-->
+                                <label for="contry">What contry are you from?</label>
+                                <select name="contry" id="contry">
+                                    <option value="norway">Norway</option>
+                                    <option value="sweden">Sweden</option>
+                                    <option value="denmark">Denmark</option>
+                                    <option value="Finland">Finland</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid-item">
+                                <!--Form submit button-->
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

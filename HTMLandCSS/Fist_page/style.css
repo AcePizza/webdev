@@ -1,0 +1,115 @@
+h1:hover {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.test-something {
+    color: blue;
+}
+
+p2 {
+    background-color: yellow;
+}
+
+.test-two {
+    border-top: 10px;
+    border-style: solid;
+    border-radius:15%;
+    padding: 15%;
+    border-bottom: 0px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.test-two:hover {
+    border-top: 20px;
+    border-style: solid;
+    font-weight: bolder;
+    border-radius:5%;
+    padding: 10%;
+    background-color: antiquewhite;
+}
+
+.test-two {
+    font-size: 36px;
+}
+
+div {
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes my-animation {
+    from {
+        background-color: aliceblue;
+        width: 300px;
+        top: 10px;
+    }
+    to {
+        background-color: rgb(34, 112, 45);
+        width: 50px;
+        top: 100px;
+    }
+}
+
+.test-color-animation {
+    border-style: solid;
+    font-size: 25px;
+    padding: 10%;
+    border-radius: 5px;
+    border-color: black;
+    animation-name: my-animation2;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.test-color-animation:hover {
+    border-style: solid;
+    font-size: 25px;
+    padding: 10%;
+    border-radius: 5px;
+    border-color: black;
+    animation-name: my-animation3;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes my-animation2 {
+    from {
+        background-color: rebeccapurple;
+        color: aliceblue;
+    }
+    to {
+        background-color: aqua;
+        color: brown;
+    }
+}
+
+
+@keyframes my-animation3 {
+    from {
+        background-color: rgb(169, 104, 235);
+        color: rgb(0, 0, 0);
+    }
+    to {
+        background-color: rgb(16, 68, 68);
+        color: black;
+    }
+}

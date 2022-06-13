@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    padding: 5px;
+}
+
+.div-left {
+    float: left;
+    width: 50%;
+}
+
+.div-right {
+    margin-left: 50%;
+}
+
+.div-underneath {
+    position: relative;
+}
+
+.under-right {
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.under-center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    vertical-align: top;
+    border-style: solid;
+}
+
+.bottom-center {
+    border-style: solid;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+}
+
+footer {
+    background-color: aqua;
+}

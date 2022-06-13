@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hello World - Form</title>
+        <meta name="description" content="">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="navbar">
+            <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+            <a href="table.html"> Table</a>
+            <a href="#"> Form</a>
+            <a href="contact.html"> Contact</a>
+        </div>
+        <section>
+            <h1 >Form</h1>
+
+            <hr class="rounded">
+            
+            <div class="test">
+                <form>
+                    <!--Fist name-->
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <!--Last name-->
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <br>
+                    <br>
+                    <p>Animal</p>
+                    <label for="dog">Dog</label>
+                    <input type="checkbox" id="dog" value="dog">
+                    <br>
+                    <br>
+                    <p>Gender</p>
+                    <input type="radio" id="man" name="man">
+                    <label for="man">Man</label>
+                    <br>
+                    <br>
+                    <label for="contry">What contry are you from?</label>
+                    <select name="contry" id="contry">
+                        <option value="norway">Norway</option>
+                        <!--Can add more here-->
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
+
+<!-- The Menu bar consept: https://www.w3schools.com/howto/howto_css_navbar_icon.asp -->

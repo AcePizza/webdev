@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #555;
+    padding-top: 5px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: hidden;
+    padding-right: 10;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.navbar-page {
+    border-radius: 4px;
+    background-color: white;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    color: black !important;
+
+}
+
+.navbar a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-radius: 4px;
+    background-color: white;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    color: black !important;
+}
+
+.main-stuff {
+    margin: 10px;
+    /* border-style: solid; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+.image-mainpage {
+    float: left;
+    width: 20%;
+    height: 20%;
+    overflow: scroll;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* Flex properties for the forms page */
+.flex-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+}
+
+/* .flex-form > div {
+  border-style: solid;
+} */
+
+/* Divider for the froms page */
+hr.divider {
+    border-top: 3px solid black;
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 0;
+    vertical-align: text-top;
+    font-size: 16px !important;
+}
+
+.grid-form {
+    /* border-style: solid; */
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+/* .grid-item {
+    border-style: solid;
+} */
+
+iframe {
+    border-radius: 4px;
+}
