@@ -182,18 +182,15 @@ Save the changes to your JavaScript file. Reload the HTML page in your browser. 
 If not, investigate and fix it.
 */
 
-// console.log('Exercise 7-------')
-// const myColor = ["Red", "Green", "White", "Black"];
+console.log('Exercise 7-------')
+const myColor = ["Red", "Green", "White", "Black"];
 
-// function joinTheDarkSide (arrayFive) {
-//     for (let i = 0; i <= arrayFive.length; i++) {
-//         let stringReturn = '';
-//         stringReturn.concat(arrayFive[i]);
-//     }
-//     console.log(stringReturn);
-// }
+function joinTheDarkSide(a) {
+    let joinedStr = a.join();
+    return joinedStr;
+}
 
-// joinTheDarkSide (myColor)
+console.log(joinTheDarkSide(myColor));
 
 /* JavaScript String Exercise 1
 Write a JavaScript function that reverses a number. 
