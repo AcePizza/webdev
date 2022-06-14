@@ -1,4 +1,4 @@
-// // Exercise 1 
+// // Exercise 1
 // console.log('Exercise 1-------')
 // let helloWorld = 'Hello World!'
 // console.log(helloWorld);
@@ -82,23 +82,54 @@
 // }
 // exFiveFunc(exFiveArray, exFiveIndex);
 
-// Exercise 6
+// // Exercise 6 v1.2
 // console.log('Exercise 6-------')
 // const duplicatesArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
-// let result = []; 
+// let result = [];
+// let conditionText = '';
 
-// function checkDuplicates(array) {
-//     for (let i = 0; i <= array.length; i++) {
-//         for (let j = 0; j <= array.length; j++) {
-//             if (array[i] == array[j]) {
-
-//                 result.push(array[j]);
-//             } 
+// function checkDuplicates(arr) {
+//     for (let i = 0; i <= arr.length; i++) {
+//         for (let j = 0; j <= arr.length; j++) {
+//             if (arr[i] == arr[j]) {
+//                 conditionText = 'There is a match ';
+//                 result.push(arr[j]);
+//             } else {
+//                 conditionText = 'There is NO match ';
+//             }
+//             //Some values repat because one loop compares the number in the other loop with itself
+//             console.log(conditionText + "This is the first loop " + arr[i] + " " + "This is the scond loop " + arr[j] );
 //         }
 //     }
 //     console.log(result);
 // }
 // checkDuplicates(duplicatesArray);
+
+// Exercise 6 v1.3
+console.log("Exercise 6-------");
+const duplicatesArray = [
+  3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99,
+  100,
+];
+
+function checkDuplicates(a) {
+  var resultReturn = [];
+  for (let i = 0; i < a.length; i++) {
+    var ct = a[i];
+    var cmt = 0;
+    for (var x = 0; x < a.length; ++x) {
+      if (ct === a[x]) {
+        cmt++;
+        if (cmt > 1) {
+            resultReturn.push(a[i]);
+        }
+      }
+    }
+  }
+  return resultReturn.filter((i, ix) => resultReturn.indexOf(i) === ix);
+}
+
+console.log(checkDuplicates(duplicatesArray));
 
 // Exercise 7
 // console.log('Exercise 7-------')
@@ -122,15 +153,15 @@
 //     // Step 1. Use the split() method to return a new array
 //     var splitString = str.split(""); // var splitString = "hello".split("");
 //     // ["h", "e", "l", "l", "o"]
- 
+
 //     // Step 2. Use the reverse() method to reverse the new created array
 //     var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
 //     // ["o", "l", "l", "e", "h"]
- 
+
 //     // Step 3. Use the join() method to join all elements of the array into a string
 //     var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
 //     // "olleh"
-    
+
 //     //Step 4. Return the reversed string
 //     console.log(joinArray);
 // }
@@ -149,7 +180,6 @@
 
 // stringAplphabetically(x)
 
-
 // JavaScript String Exercise 3
 // console.log('JavaScript String Exercise 3-------')
 
@@ -166,7 +196,6 @@
 
 // upperCase (x);
 
-
 // JavaScript String Exercise 4
 
 /* Write a JavaScript function that finds the longest word in a phrase. 
@@ -174,19 +203,19 @@ For example, if x = "Web Development Tutorial", then the output should be "Devel
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it. */
 
-console.log('JavaScript String Exercise 4-------')
+// console.log('JavaScript String Exercise 4-------')
 
-let x = "Web Development Tutorial";
+// let x = "Web Development Tutorial";
 
-function longestWord (str) {
-    let strValue = [];
-    let stringSplit = str.split(/\s+/);
-    for (let i = 0; i <= 2; i++) {
-        strValue.push(stringSplit[i].length);
-    }
-    let maxValue = Math.max(...strValue);
-    let indexMax = strValue.indexOf(maxValue);
-    console.log(stringSplit[indexMax]);
-}
+// function longestWord (str) {
+//     let strValue = [];
+//     let stringSplit = str.split(/\s+/);
+//     for (let i = 0; i <= 2; i++) {
+//         strValue.push(stringSplit[i].length);
+//     }
+//     let maxValue = Math.max(...strValue);
+//     let indexMax = strValue.indexOf(maxValue);
+//     console.log(stringSplit[indexMax]);
+// }
 
-longestWord(x);
+// longestWord(x);
