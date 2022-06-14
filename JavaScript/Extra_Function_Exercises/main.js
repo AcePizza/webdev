@@ -138,4 +138,67 @@ Return the result and print it in the main program. */
 
 console.log("Exercise 8 --------------");
 
+const arrEx8 = [1,2,8,3,2,3,4];
 
+function addEvenPositions(a) {
+    let even = [];
+    let sum = 0;
+    for (let i = 0; i <= a.length; i++) {
+        if (i % 2 === 0) {
+           even.push(a[i]);
+        }
+    }
+    for (let i = 0; i < even.length; i++) {
+        sum += even[i];
+    }
+    return sum;
+}
+
+console.log(addEvenPositions(arrEx8));
+
+/* Exercise 9
+Write a function that by sending a number as parameter, tells you all the even numbers before it. 
+For example, if you send to the function the number 9, it should print 2,4,6,8. */
+
+console.log("Exercise 9 --------------");
+
+function findEvenBefor(a) {
+    let even = [];
+    let num = [];
+    for (let i = 0; i <= a; i++) {
+        num.push(i);
+    }
+    for (let i = 0; i <= num.length; i++) {
+        if (i % 2 === 0) {
+           even.push(num[i]);
+        }
+    }
+    return even;
+}
+console.log(findEvenBefor(10));
+
+/* Exercise 10
+Write a function that by sending two numbers as parameters, it tells you the odd numbers between these. 
+For instance, if you send the numbers 1 and 13 as parameters, it should print 1,3,5,7,9,11,13. */
+
+
+console.log("Exercise 10 --------------");
+
+function findEvenBetween(a, b) {
+    const min = a;
+    const max = b;
+    let even = [];
+    let num = [];
+    for (let i = min; i <= max; i++) {
+        num.push(i);
+    }
+    for (let i = 0; i <= num.length; i++) {
+        if (i % 2 === 0) {
+           even.push(num[i]);
+        }
+    }
+    return even;
+}
+
+
+console.log(findEvenBetween(5, 20));
