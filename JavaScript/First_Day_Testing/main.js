@@ -1,111 +1,154 @@
-// // Exercise 1
-// console.log('Exercise 1-------')
-// let helloWorld = 'Hello World!'
-// console.log(helloWorld);
+/* Writing expressions with variables - Exercise 1
+Create an array with all the names of your class (including mentors). 
+Sort the array alphabetically. 
+Then print the first element of the array in the console. 
+On the next line, print the last element of the array in the console. 
+On the next line, print all the elements of the array in the console (use a "for" loop). 
+Save the file and reload the page. You should see the first element of the sorted array, the last element of the sorted array, and a list of all the elements in order in the array in the console.*/
 
-// // Exercise 2
-// console.log('Exercise 2-------')
-// let myAge = 42;
 
-// // Exercise 3
-// console.log('Exercise 3-------')
-// let juliaAge = 32;
-// let ageDif = myAge - juliaAge;
-// console.log(ageDif);
+console.log('Exercise 1-------')
+let helloWorld = 'Hello World!'
+console.log(helloWorld);
 
-// // Exercise 4
-// console.log('Exercise 4-------')
-// if (myAge <= 21) {
-//     console.log('My age is more!')
-// } else if (myAge >= 21) {
-//     console.log('My age is less!')
-// }
 
-// // Exercise 5
-// console.log('Exercise 5-------')
-// if (myAge <= juliaAge) {
-//     console.log('Julia is younger')
-// } else if (myAge >= juliaAge) {
-//     console.log('Julia is older')
-// } else {
-//     console.log('You are the same age')
-// }
+/* Writing expressions with variables - Exercise 2 
+Create a variable called age with a number that is your age. Do not use string quotes for numbers.
 
-// // Exercise 6
-// console.log('Exercise 6-------')
-// let myArray = ["Stian", "Jesprit", "Thomas", "Eser", "John", "Ottavia", "Helena", "Raul"]
-// myArray.sort();
-// console.log(myArray[1]);
+Add a line to print that variable in the console. Save the file and reload the page. You should see your name and your age.*/
 
-// console.log('Space-------')
-// for (let i = 0; i <= myArray.length; i++) {
-//     console.log(myArray[i] + ' ' + i);
-// }
+console.log('Exercise 2-------')
+let myAge = 42;
+console.log(myAge);
 
-// // Exercise 7
-// console.log('Exercise 7-------')
-// let classAge = [1,3,5,7,9,11,2,4,6,8,10];
+/* Writing expressions with variables - Exercise 3 
+Create a variable called juliaAge with a value 32. 
+Create another variable called ageDiff and set it to an expression that calculates your age minus Julias's age. Print the value of ageDiff. 
+Save the file and reload the page. 
+You should see your age and the age difference. 
+If you are younger than Julia, you should see a negative number.*/
 
-// for (let i = 0; i <= classAge.length; i++) {
-//     if (classAge[i] % 2 == 0) {
-//         console.log(classAge[i] + ' is a even number.');
-//     } else {
-//         console.log(classAge[i] + ' is an odd number')
-//     }
-// }
 
-// Functions that use Arrays
-// Exercise 3
-// console.log('Exercise 3-------')
-// let classAge = [1,3,5,7,9,11,2,4,6,8,10];
-// function lowNumber() {
-//     let minValue = Math.min(...classAge);
-//     console.log(minValue);
-// }
-// lowNumber();
+console.log('Exercise 3-------')
+let juliaAge = 32;
+let ageDif = myAge - juliaAge;
+console.log(ageDif);
 
-// // Exercise 4
-// console.log('Exercise 4-------')
-// function highNumber() {
-//     let maxValue = Math.max(...classAge);
-//     console.log(maxValue);
-// }
-// highNumber()
+/* Writing code with conditionals - Exercise 4 
+Write a conditional that compares the variable with your age with the number 21. 
+It should print either "You are older than 21" or "You are not older than 21", appropriately, depending on your age. 
+Save your JavaScript file and reload the page. Make sure you see the correct message. 
+Try changing your age in the JavaScript file to make sure the other message prints when it should.
+*/
 
-// // Exercise 5
-// console.log('Exercise 5-------')
-// let exFiveArray = [1,2,3,4,5,6,7,8]
-// let exFiveIndex = 2;
+console.log('Exercise 4-------')
+if (myAge <= 21) {
+    console.log('My age is more!')
+} else if (myAge >= 21) {
+    console.log('My age is less!')
+}
 
-// function exFiveFunc (a, b) {
-//     console.log(a[b]);
-// }
-// exFiveFunc(exFiveArray, exFiveIndex);
+/* Writing code with conditionals - Exercise 5 
+Write a conditional that compares the variable with your age with the number 21. 
+It should print either "You are older than 21" or "You are not older than 21", appropriately, depending on your age. 
+Save your JavaScript file and reload the page. 
+Make sure you see the correct message. 
+Try changing your age in the JavaScript file to make sure the other message prints when it should.*/
 
-// // Exercise 6 v1.2
-// console.log('Exercise 6-------')
-// const duplicatesArray = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
-// let result = [];
-// let conditionText = '';
+console.log('Exercise 5-------')
+if (myAge <= juliaAge) {
+    console.log('Julia is younger')
+} else if (myAge >= juliaAge) {
+    console.log('Julia is older')
+} else {
+    console.log('You are the same age')
+}
 
-// function checkDuplicates(arr) {
-//     for (let i = 0; i <= arr.length; i++) {
-//         for (let j = 0; j <= arr.length; j++) {
-//             if (arr[i] == arr[j]) {
-//                 conditionText = 'There is a match ';
-//                 result.push(arr[j]);
-//             } else {
-//                 conditionText = 'There is NO match ';
-//             }
-//             //Some values repat because one loop compares the number in the other loop with itself
-//             console.log(conditionText + "This is the first loop " + arr[i] + " " + "This is the scond loop " + arr[j] );
-//         }
-//     }
-//     console.log(result);
-// }
-// checkDuplicates(duplicatesArray);
+/* Sorting an Array - Exercise 1
 
-// Exercise 6 v1.3
+Create an array with all the names of your class (including mentors). 
+Sort the array alphabetically. Then print the first element of the array in the console. 
+On the next line, print the last element of the array in the console. 
+On the next line, print all the elements of the array in the console (use a "for" loop). 
+Save the file and reload the page. 
+You should see the first element of the sorted array, the last element of the sorted array, and a list of all the elements in order in the array in the console. */
+
+console.log('Sorting an Array - Exercise 1-------')
+let myArray = ["Stian", "Jesprit", "Thomas", "Eser", "John", "Ottavia", "Helena", "Raul"]
+myArray.sort();
+console.log(myArray[1]);
+
+console.log('Space-------')
+for (let i = 0; i <= myArray.length; i++) {
+    console.log(myArray[i] + ' ' + i);
+}
+
+/* Looping over an Array - Exercise 2
+Create an array with all the ages of the students in your class. 
+Iterate the array using a while loop, and then print every age in the console. 
+Add a conditional inside the while loop to only print even numbers. 
+Write again a loop but use a "for" loop instead of a "while" loop. 
+ave your changes to your JavaScript file. Reload the HTML page in your browser. 
+You should see every age printed, then only the even numbers printed. If not, investigate and fix it.*/
+
+console.log('Looping over an Array - Exercise 2-------')
+let classAge = [1,3,5,7,9,11,2,4,6,8,10];
+
+for (let i = 0; i <= classAge.length; i++) {
+    if (classAge[i] % 2 == 0) {
+        console.log(classAge[i] + ' is a even number.');
+    } else {
+        console.log(classAge[i] + ' is an odd number')
+    }
+}
+
+/* Functions that use Arrays - Exercise 3 
+Write a function that receives an array as a parameter and prints the lowest number in the array to the console. 
+Save the changes to your JavaScript file. Reload the HTML page in your browser. 
+You should see the lowest number in the array printed in the console. 
+If not, investigate and fix it. */
+
+console.log('Functions that use Arrays - Exercise 3-------')
+let classAgeEx3 = [1,3,5,7,9,11,2,4,6,8,10];
+function lowNumber() {
+    let minValue = Math.min(...classAgeEx3);
+    console.log(minValue);
+}
+lowNumber();
+
+/* Exercise 4 Write a function that receives an array as a parameter and prints the biggest number in the array to the console. Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the biggest number in the array printed in the console. If not, investigate and fix it. */
+
+console.log('Exercise 4-------')
+function highNumber() {
+    let maxValue = Math.max(...classAge);
+    console.log(maxValue);
+}
+highNumber()
+
+/* Exercise 5
+Write a function that receives two parameters, an array, and an index. The function will print the value of the element at the given position (one-based) to the console. For example, given the following array and index, the function will print '6'.
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; var index = 1; Save the changes to your JavaScript file and check your browser console. You should see the number at the correct index printed in the console. If not, investigate and fix it. */
+
+console.log('Exercise 5-------')
+let exFiveArray = [1,2,3,4,5,6,7,8]
+let exFiveIndex = 2;
+
+function exFiveFunc (a, b) {
+    console.log(a[b]);
+}
+exFiveFunc(exFiveArray, exFiveIndex);
+
+
+/* Exercise 6
+Write a function that receives an array and only prints the values that repeat.
+
+For example, given the following array and index, the function will print '6,23,33,100'.
+
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+
+Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see an array of the repeated numbers printed in the console. If not, investigate and fix it. */
+
+
 console.log("Exercise 6-------");
 const duplicatesArray = [
   3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99,
@@ -131,7 +174,14 @@ function checkDuplicates(a) {
 
 console.log(checkDuplicates(duplicatesArray));
 
-// Exercise 7
+/* Exercise 7 
+Write a simple JavaScript function to join all elements of the following array into a string.
+myColor = ["Red", "Green", "White", "Black"];
+Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the following in your console:
+"Red", "Green", "White", "Black"
+If not, investigate and fix it.
+*/
+
 // console.log('Exercise 7-------')
 // const myColor = ["Red", "Green", "White", "Black"];
 
@@ -145,56 +195,61 @@ console.log(checkDuplicates(duplicatesArray));
 
 // joinTheDarkSide (myColor)
 
-// // JavaScript String Exercise 1
-// console.log('JavaScript String Exercise 1-------')
-// const stringToReverse = '12345';
+/* JavaScript String Exercise 1
+Write a JavaScript function that reverses a number. 
+For example, if x = 32443 then the output should be 34423. 
+Save your JavaScript file and reload the page. Make sure you see the correct output. 
+If not, investigate and fix it.*/
 
-// function reverseString (str) {
-//     // Step 1. Use the split() method to return a new array
-//     var splitString = str.split(""); // var splitString = "hello".split("");
-//     // ["h", "e", "l", "l", "o"]
+console.log('JavaScript String Exercise 1-------')
+const stringToReverse = '12345';
 
-//     // Step 2. Use the reverse() method to reverse the new created array
-//     var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
-//     // ["o", "l", "l", "e", "h"]
+function reverseString (str) {
+    var splitString = str.split(""); 
+    var reverseArray = splitString.reverse(); 
+    var joinArray = reverseArray.join("");
+    console.log(joinArray);
+}
 
-//     // Step 3. Use the join() method to join all elements of the array into a string
-//     var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
-//     // "olleh"
+reverseString(stringToReverse);
 
-//     //Step 4. Return the reversed string
-//     console.log(joinArray);
-// }
+/* JavaScript String Exercise 2 
+Write a JavaScript function that returns a string in alphabetical order. 
+For example, if x = 'webmaster' then the output should be 'abeemrstw'. 
+Punctuation and numbers aren't passed in the string. Save your JavaScript file and reload the page. 
+Make sure you see the correct output. If not, investigate and fix it. */
 
-// reverseString(stringToReverse);
+console.log('JavaScript String Exercise 2-------')
 
-// JavaScript String Exercise 2
-// console.log('JavaScript String Exercise 2-------')
+let xEx2 = 'webmaster';
 
-// let x = 'webmaster';
+function stringAplphabetically (str) {
+    let splitString = str.split('');
+    console.log(splitString.sort());
+}
 
-// function stringAplphabetically (str) {
-//     let splitString = str.split('');
-//     console.log(splitString.sort());
-// }
+stringAplphabetically(xEx2)
 
-// stringAplphabetically(x)
+/* JavaScript String Exercise 3 
+Write a JavaScript function that converts the first letter of every word to uppercase. 
+For example, if x = "prince of persia" then the output should be "Prince Of Persia". 
+Save your JavaScript file and reload the page. Make sure you see the correct output. 
+If not, investigate and fix it.*/
 
-// JavaScript String Exercise 3
-// console.log('JavaScript String Exercise 3-------')
+console.log('JavaScript String Exercise 3-------')
 
-// const x = "prince of persia";
+const xEx3 = "prince of persia";
 
-// function upperCase(str) {
-//     let stringSplit = str.split(" ");
-//     for (let i = 0; i <= stringSplit.length; i++) {
-//         let capitalLetters = stringSplit[i].charAt(0).toUpperCase() + stringSplit[i].slice(1);
-//         console.log(capitalLetters);
-//     }
-//     // console.log(stringSplit);
-// }
+function upperCase(str) {
+    let stringSplit = str.split(" ");
+    for (let i = 0; i <= stringSplit.length; i++) {
+        let capitalLetters = stringSplit[i].charAt(0).toUpperCase() + stringSplit[i].slice(1);
+        console.log(capitalLetters);
+    }
+    // console.log(stringSplit);
+}
 
-// upperCase (x);
+upperCase (xEx3);
 
 // JavaScript String Exercise 4
 
@@ -203,19 +258,19 @@ For example, if x = "Web Development Tutorial", then the output should be "Devel
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it. */
 
-// console.log('JavaScript String Exercise 4-------')
+console.log('JavaScript String Exercise 4-------')
 
-// let x = "Web Development Tutorial";
+let x = "Web Development Tutorial";
 
-// function longestWord (str) {
-//     let strValue = [];
-//     let stringSplit = str.split(/\s+/);
-//     for (let i = 0; i <= 2; i++) {
-//         strValue.push(stringSplit[i].length);
-//     }
-//     let maxValue = Math.max(...strValue);
-//     let indexMax = strValue.indexOf(maxValue);
-//     console.log(stringSplit[indexMax]);
-// }
+function longestWord (str) {
+    let strValue = [];
+    let stringSplit = str.split(/\s+/);
+    for (let i = 0; i <= 2; i++) {
+        strValue.push(stringSplit[i].length);
+    }
+    let maxValue = Math.max(...strValue);
+    let indexMax = strValue.indexOf(maxValue);
+    console.log(stringSplit[indexMax]);
+}
 
-// longestWord(x);
+longestWord(x);
