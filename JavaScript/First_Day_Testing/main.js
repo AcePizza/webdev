@@ -79,7 +79,7 @@ myArray.sort();
 console.log(myArray[1]);
 
 console.log('Space-------')
-for (let i = 0; i <= myArray.length; i++) {
+for (let i = 0; i < myArray.length; i++) {
     console.log(myArray[i] + ' ' + i);
 }
 
@@ -94,7 +94,7 @@ You should see every age printed, then only the even numbers printed. If not, in
 console.log('Looping over an Array - Exercise 2-------')
 let classAge = [1,3,5,7,9,11,2,4,6,8,10];
 
-for (let i = 0; i <= classAge.length; i++) {
+for (let i = 0; i < classAge.length; i++) {
     if (classAge[i] % 2 == 0) {
         console.log(classAge[i] + ' is a even number.');
     } else {
@@ -116,7 +116,9 @@ function lowNumber() {
 }
 lowNumber();
 
-/* Exercise 4 Write a function that receives an array as a parameter and prints the biggest number in the array to the console. Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see the biggest number in the array printed in the console. If not, investigate and fix it. */
+/* Exercise 4 Write a function that receives an array as a parameter and prints the biggest number in the array to the console. 
+Save the changes to your JavaScript file. Reload the HTML page in your browser. 
+You should see the biggest number in the array printed in the console. If not, investigate and fix it. */
 
 console.log('Exercise 4-------')
 function highNumber() {
@@ -126,8 +128,12 @@ function highNumber() {
 highNumber()
 
 /* Exercise 5
-Write a function that receives two parameters, an array, and an index. The function will print the value of the element at the given position (one-based) to the console. For example, given the following array and index, the function will print '6'.
-var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; var index = 1; Save the changes to your JavaScript file and check your browser console. You should see the number at the correct index printed in the console. If not, investigate and fix it. */
+Write a function that receives two parameters, an array, and an index. 
+The function will print the value of the element at the given position (one-based) to the console. 
+For example, given the following array and index, the function will print '6'.
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; var index = 1; 
+Save the changes to your JavaScript file and check your browser console. 
+You should see the number at the correct index printed in the console. If not, investigate and fix it. */
 
 console.log('Exercise 5-------')
 let exFiveArray = [1,2,3,4,5,6,7,8]
@@ -141,12 +147,10 @@ exFiveFunc(exFiveArray, exFiveIndex);
 
 /* Exercise 6
 Write a function that receives an array and only prints the values that repeat.
-
 For example, given the following array and index, the function will print '6,23,33,100'.
-
 var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
-
-Save the changes to your JavaScript file. Reload the HTML page in your browser. You should see an array of the repeated numbers printed in the console. If not, investigate and fix it. */
+Save the changes to your JavaScript file. Reload the HTML page in your browser. 
+You should see an array of the repeated numbers printed in the console. If not, investigate and fix it. */
 
 
 console.log("Exercise 6-------");
@@ -156,20 +160,15 @@ const duplicatesArray = [
 ];
 
 function checkDuplicates(a) {
-  var resultReturn = [];
-  for (let i = 0; i < a.length; i++) {
-    var ct = a[i];
-    var cmt = 0;
-    for (var x = 0; x < a.length; ++x) {
-      if (ct === a[x]) {
-        cmt++;
-        if (cmt > 1) {
-            resultReturn.push(a[i]);
+    let result = [];
+    for (let i = 0; i < a.length; i++) {
+        for (let j = i + 1; j < a.length; j++) {
+            if (a[i] === a[j]) { 
+                result.push(a[i]);
+            }
         }
-      }
     }
-  }
-  return resultReturn.filter((i, ix) => resultReturn.indexOf(i) === ix);
+    return result;
 }
 
 console.log(checkDuplicates(duplicatesArray));
@@ -202,9 +201,9 @@ console.log('JavaScript String Exercise 1-------')
 const stringToReverse = '12345';
 
 function reverseString (str) {
-    var splitString = str.split(""); 
-    var reverseArray = splitString.reverse(); 
-    var joinArray = reverseArray.join("");
+    let splitString = str.split(""); 
+    let reverseArray = splitString.reverse(); 
+    let joinArray = reverseArray.join("");
     console.log(joinArray);
 }
 
@@ -216,7 +215,7 @@ For example, if x = 'webmaster' then the output should be 'abeemrstw'.
 Punctuation and numbers aren't passed in the string. Save your JavaScript file and reload the page. 
 Make sure you see the correct output. If not, investigate and fix it. */
 
-console.log('JavaScript String Exercise 2-------')
+console.log('JavaScript String Exercise 2-------');
 
 let xEx2 = 'webmaster';
 
@@ -233,13 +232,13 @@ For example, if x = "prince of persia" then the output should be "Prince Of Pers
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it.*/
 
-console.log('JavaScript String Exercise 3-------')
+console.log('JavaScript String Exercise 3-------');
 
 const xEx3 = "prince of persia";
 
 function upperCase(str) {
     let stringSplit = str.split(" ");
-    for (let i = 0; i <= stringSplit.length; i++) {
+    for (let i = 0; i < stringSplit.length; i++) {
         let capitalLetters = stringSplit[i].charAt(0).toUpperCase() + stringSplit[i].slice(1);
         console.log(capitalLetters);
     }
@@ -262,7 +261,7 @@ let x = "Web Development Tutorial";
 function longestWord (str) {
     let strValue = [];
     let stringSplit = str.split(/\s+/);
-    for (let i = 0; i <= 2; i++) {
+    for (let i = 0; i < stringSplit.length; i++) {
         strValue.push(stringSplit[i].length);
     }
     let maxValue = Math.max(...strValue);
