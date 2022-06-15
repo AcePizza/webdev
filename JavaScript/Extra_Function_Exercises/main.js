@@ -160,7 +160,7 @@ function addEvenNumbers (a) {
 
 console.log(addEvenNumbers(arrEx7));
 
-/* Exercise 8
+/* Exercise 8 !!!! SOFT MODE !!!!!
 Write a function that adds the even positions of an array. \
 For example, the array: 1 2 8 3 2 3 4 would result in the sum of 8 + 2 + 4 since they are in even positions in the array (position 2,4,6). 
 Return the result and print it in the main program. */
