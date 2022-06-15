@@ -269,7 +269,7 @@ let xEx4 = "Web Development Tutorial";
 function longestWord (str) {
     let strValue = [];
     let stringSplit = str.split(/\s+/);
-    for (let i = 0; i < stringSplit.le; i++) {
+    for (let i = 0; i < stringSplit.length; i++) {
         strValue.push(stringSplit[i].length);
     }
     let maxValue = Math.max(...strValue);
