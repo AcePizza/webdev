@@ -57,11 +57,13 @@ function multiplyTwoNum (a, b) {
 console.log(multiplyTwoNum(25, 6))
 
 /* Exercise 4
-Write a function that determines the type of a triangle given the length of its three sides. */
+Write a function that determines the type of a triangle given the length of its three sides. 
+Easier to use conditional: if ( a == b || b == c || c == a ) 
+*/
 
 addConsoleColor("Exercise 4 --------------");
 
-function detTriagle (a,b,c) {
+function detTrinagle (a,b,c) {
     const arr = [a, b, c];
     let result = '';
     let counter = 0;
@@ -84,7 +86,7 @@ function detTriagle (a,b,c) {
     console.log(result);
 }
 
-detTriagle(2,3,2);
+detTrinagle(2,3,2);
 
 
 /* Exercise 5
