@@ -93,12 +93,12 @@ detTrinagle(2,3,2);
 Write a function that receives as a parameter an array of characters and replaces all "a" by "1". e.g.: JavaScript will become J1v1Script. */
 
 addConsoleColor("Exercise 5 --------------");
-let arr = ["Java", "Script", "Test", "Tast"]
+let arr = ["Java", "Script", "Test", "Tast", "Taasat"]
 
 function replaceA (a) {
     let result = [];
     for (let i = 0; i < a.length; i++) {
-        let itr = a[i].replace("a", 1);
+        let itr = a[i].replaceAll("a", 1);
         result.push(itr);
     }
     return result;
