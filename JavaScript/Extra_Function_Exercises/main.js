@@ -172,11 +172,12 @@ const arrEx8 = [1,2,8,3,2,3,4];
 function addEvenPositions(a) {
     let even = [];
     let sum = 0;
-    for (let i = 0; i <= a.length; i++) {
+    for (let i = 0; i < a.length; i++) {
         if (i % 2 === 0) {
            even.push(a[i]);
         }
     }
+    console.log(even);
     for (let i = 0; i < even.length; i++) {
         sum += even[i];
     }
