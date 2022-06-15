@@ -1,3 +1,11 @@
+/* Adds colour to the consol.log that seperates the exercises */
+
+function addConsoleColor(msg) {
+    const color = 'red';
+    console.log("%c" + msg, "color:" + color + ";font-weight:bold;");
+}
+
+
 /* Writing expressions with variables - Exercise 1
 Create an array with all the names of your class (including mentors). 
 Sort the array alphabetically. 
@@ -7,7 +15,7 @@ On the next line, print all the elements of the array in the console (use a "for
 Save the file and reload the page. You should see the first element of the sorted array, the last element of the sorted array, and a list of all the elements in order in the array in the console.*/
 
 
-console.log('Exercise 1-------')
+addConsoleColor('Exercise 1-------')
 let helloWorld = 'Hello World!'
 console.log(helloWorld);
 
@@ -17,7 +25,7 @@ Create a variable called age with a number that is your age. Do not use string q
 
 Add a line to print that variable in the console. Save the file and reload the page. You should see your name and your age.*/
 
-console.log('Exercise 2-------')
+addConsoleColor('Exercise 2-------')
 let myAge = 42;
 console.log(myAge);
 
@@ -29,7 +37,7 @@ You should see your age and the age difference.
 If you are younger than Julia, you should see a negative number.*/
 
 
-console.log('Exercise 3-------')
+addConsoleColor('Exercise 3-------')
 let juliaAge = 32;
 let ageDif = myAge - juliaAge;
 console.log(ageDif);
@@ -41,7 +49,7 @@ Save your JavaScript file and reload the page. Make sure you see the correct mes
 Try changing your age in the JavaScript file to make sure the other message prints when it should.
 */
 
-console.log('Exercise 4-------')
+addConsoleColor('Exercise 4-------')
 if (myAge <= 21) {
     console.log('My age is more!')
 } else if (myAge >= 21) {
@@ -55,7 +63,7 @@ Save your JavaScript file and reload the page.
 Make sure you see the correct message. 
 Try changing your age in the JavaScript file to make sure the other message prints when it should.*/
 
-console.log('Exercise 5-------')
+addConsoleColor('Exercise 5-------')
 if (myAge <= juliaAge) {
     console.log('Julia is younger')
 } else if (myAge >= juliaAge) {
@@ -73,7 +81,7 @@ On the next line, print all the elements of the array in the console (use a "for
 Save the file and reload the page. 
 You should see the first element of the sorted array, the last element of the sorted array, and a list of all the elements in order in the array in the console. */
 
-console.log('Sorting an Array - Exercise 1-------')
+addConsoleColor('Sorting an Array - Exercise 1-------')
 let myArray = ["Stian", "Jesprit", "Thomas", "Eser", "John", "Ottavia", "Helena", "Raul"]
 myArray.sort();
 console.log(myArray[1]);
@@ -91,7 +99,7 @@ Write again a loop but use a "for" loop instead of a "while" loop.
 ave your changes to your JavaScript file. Reload the HTML page in your browser. 
 You should see every age printed, then only the even numbers printed. If not, investigate and fix it.*/
 
-console.log('Looping over an Array - Exercise 2-------')
+addConsoleColor('Looping over an Array - Exercise 2-------')
 let classAge = [1,3,5,7,9,11,2,4,6,8,10];
 
 for (let i = 0; i < classAge.length; i++) {
@@ -108,7 +116,7 @@ Save the changes to your JavaScript file. Reload the HTML page in your browser.
 You should see the lowest number in the array printed in the console. 
 If not, investigate and fix it. */
 
-console.log('Functions that use Arrays - Exercise 3-------')
+addConsoleColor('Functions that use Arrays - Exercise 3-------')
 let classAgeEx3 = [1,3,5,7,9,11,2,4,6,8,10];
 function lowNumber() {
     let minValue = Math.min(...classAgeEx3);
@@ -120,7 +128,7 @@ lowNumber();
 Save the changes to your JavaScript file. Reload the HTML page in your browser. 
 You should see the biggest number in the array printed in the console. If not, investigate and fix it. */
 
-console.log('Exercise 4-------')
+addConsoleColor('Exercise 4-------')
 function highNumber() {
     let maxValue = Math.max(...classAge);
     console.log(maxValue);
@@ -135,7 +143,7 @@ var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; var 
 Save the changes to your JavaScript file and check your browser console. 
 You should see the number at the correct index printed in the console. If not, investigate and fix it. */
 
-console.log('Exercise 5-------')
+addConsoleColor('Exercise 5-------')
 let exFiveArray = [1,2,3,4,5,6,7,8]
 let exFiveIndex = 2;
 
@@ -153,7 +161,7 @@ Save the changes to your JavaScript file. Reload the HTML page in your browser.
 You should see an array of the repeated numbers printed in the console. If not, investigate and fix it. */
 
 
-console.log("Exercise 6-------");
+addConsoleColor("Exercise 6-------");
 const duplicatesArray = [
   3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99,
   100,
@@ -181,7 +189,7 @@ Save the changes to your JavaScript file. Reload the HTML page in your browser. 
 If not, investigate and fix it.
 */
 
-console.log('Exercise 7-------')
+addConsoleColor('Exercise 7-------')
 const myColor = ["Red", "Green", "White", "Black"];
 
 function joinTheDarkSide(a) {
@@ -197,7 +205,7 @@ For example, if x = 32443 then the output should be 34423.
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it.*/
 
-console.log('JavaScript String Exercise 1-------')
+addConsoleColor('JavaScript String Exercise 1-------')
 const stringToReverse = '12345';
 
 function reverseString (str) {
@@ -215,7 +223,7 @@ For example, if x = 'webmaster' then the output should be 'abeemrstw'.
 Punctuation and numbers aren't passed in the string. Save your JavaScript file and reload the page. 
 Make sure you see the correct output. If not, investigate and fix it. */
 
-console.log('JavaScript String Exercise 2-------');
+addConsoleColor('JavaScript String Exercise 2-------');
 
 let xEx2 = 'webmaster';
 
@@ -232,7 +240,7 @@ For example, if x = "prince of persia" then the output should be "Prince Of Pers
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it.*/
 
-console.log('JavaScript String Exercise 3-------');
+addConsoleColor('JavaScript String Exercise 3-------');
 
 const xEx3 = "prince of persia";
 
@@ -254,14 +262,14 @@ For example, if x = "Web Development Tutorial", then the output should be "Devel
 Save your JavaScript file and reload the page. Make sure you see the correct output. 
 If not, investigate and fix it. */
 
-console.log('JavaScript String Exercise 4-------')
+addConsoleColor('JavaScript String Exercise 4-------')
 
-let x = "Web Development Tutorial";
+let xEx4 = "Web Development Tutorial";
 
 function longestWord (str) {
     let strValue = [];
     let stringSplit = str.split(/\s+/);
-    for (let i = 0; i < stringSplit.length; i++) {
+    for (let i = 0; i < stringSplit.le; i++) {
         strValue.push(stringSplit[i].length);
     }
     let maxValue = Math.max(...strValue);
@@ -269,4 +277,4 @@ function longestWord (str) {
     console.log(stringSplit[indexMax]);
 }
 
-longestWord(x);
+longestWord(xEx4);
