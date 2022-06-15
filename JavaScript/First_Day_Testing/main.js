@@ -272,9 +272,15 @@ function longestWord (str) {
     for (let i = 0; i < stringSplit.length; i++) {
         strValue.push(stringSplit[i].length);
     }
-    let maxValue = Math.max(...strValue);
-    let indexMax = strValue.indexOf(maxValue);
-    console.log(stringSplit[indexMax]);
+    let max = strValue[0];
+    let maxPosition = 0;
+    for (let i = 1; i < strValue.length; i++) {
+        if (strValue[i] > max) {
+            max = strValue[i];
+            maxPosition = i;
+        }
+    }
+    console.log(stringSplit[maxPosition]);
 }
 
 longestWord(xEx4);

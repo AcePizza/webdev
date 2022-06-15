@@ -123,7 +123,7 @@ console.log(sumAllElement(arrEx6));
 
 function findLargest(a) {
     let max = a[0];
-    for (let i = 1; i < a.length; i++) { /* a is constantly replaced if a higher value is found and tested agains the array */
+    for (let i = 1; i < a.length; i++) { /* max is constantly replaced if a higher value is found and tested agains with the array */
         if (a[i] > max) {
             max = a[i];
         }
