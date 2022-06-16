@@ -11,10 +11,36 @@ addBands(['Dire Straits', 'Kansas', 'Steely Dan']);
 
 The function will add three list items to the unordered list. */
 
-function myBandList (str) {
-
-}
+let myBandList = ['Dire Straits', 'Kansas', 'Steely Dan'];
 
 function addBands (str) {
-    
+    const unorderedList = document.querySelector('#band-list');
+    const listItem = document.createElement('li')
+    listItem.setAttribute('class', 'band-list' )
+    listItem.textContent = str;
+    unorderedList.appendChild(listItem);
 }
+
+for (let i = 0; i < myBandList.length; i++) {
+    addBands(myBandList[i]);
+}
+
+
+
+
+function addMultiTable(rows, cols) {
+    const afterH1 = document.querySelector('#second-heading');
+    const maintable = document.createElement('table')
+    afterH1.appendChild(maintable);
+    for (let i = 0; i < rows; i++) {
+        const insideTable = document.querySelector('table');
+        const addRow = document.createElement('tr');
+        insideTable.appendChild(addRow);
+        for (let x = 0; x < cols; x++) {
+            const addCols = document.createElement('td')
+            addRow.appendChild(addCols);
+        }
+    }
+}
+
+addMultiTable(36, 4);
