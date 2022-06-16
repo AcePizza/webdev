@@ -25,8 +25,16 @@ for (let i = 0; i < myBandList.length; i++) {
     addBands(myBandList[i]);
 }
 
+/* Exercise 2
+Write a function called addMultTable(rows, cols) that will create a multiplication table like this. Start with an empty HTML page that only contains a level 1 heading.
 
+Your function should use the JavaScript DOM to insert an HTML table after the heading.
 
+For example, if I call:
+
+addMultTable(4, 8);
+
+It will create an HTML table with 4 rows and 8 columns, and append it after the level 1 heading. */
 
 function addMultiTable(rows, cols) {
     const afterH1 = document.querySelector('#second-heading');
