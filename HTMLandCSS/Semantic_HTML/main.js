@@ -6,6 +6,10 @@ console.log(animal);
 
 function submitButton() {
     console.log("did something just happen?");
+    const mainStuff = document.querySelector("main");
+    const addText = document.createElement('p');
+    addText.textContent = "Testing something";
+    mainStuff.appendChild(addText);
 }
 
 
