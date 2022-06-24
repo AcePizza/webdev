@@ -10,7 +10,9 @@ function addText() {
   textBoxContainer.appendChild(textBoxOne);
 }
 
-addText();
+for (let i = 0; i < 3; i++) {
+    addText();
+}
 
 function showHide () {
     let x = document.getElementById("text-box-container");
