@@ -19,7 +19,7 @@ function readMoreLess () {
 
   let dots = document.createElement("span");
   dots.setAttribute("id", "dots")
-  dots.innerHTML = "...";
+  dots.innerHTML = " ...";
   
   let readMore = document.createElement("span");
   readMore.setAttribute("id", "more");
