@@ -2,7 +2,7 @@ let mainContent = document.getElementById("main-content");
 let p = document.createElement("p");
 
 let button = document.createElement("button");
-button.setAttribute("id", "myCollapsible")
+button.setAttribute("id", "myCollapsible");
 button.setAttribute("class", "btn btn-primary");
 button.setAttribute("type", "button");
 button.setAttribute("data-bs-toggle", "collapse");
@@ -25,13 +25,12 @@ p.appendChild(button);
 mainContent.appendChild(divCollaps);
 divCollaps.appendChild(divCardBody);
 
+const myCollapsible = document.getElementById("collapseExample");
+myCollapsible.addEventListener("hide.bs.collapse", (event) => {
+  button.innerHTML = "Read more";
+});
 
-const myCollapsible = document.getElementById('collapseExample')
-myCollapsible.addEventListener('hide.bs.collapse', event => {
-  button.innerHTML = "Read more"
-})
-
-const myCollapsibleTwop = document.getElementById('collapseExample')
-myCollapsible.addEventListener('show.bs.collapse', event => {
-  button.innerHTML = "Read less"
-})
+const myCollapsibleTwop = document.getElementById("collapseExample");
+myCollapsible.addEventListener("show.bs.collapse", (event) => {
+  button.innerHTML = "Read less";
+});
